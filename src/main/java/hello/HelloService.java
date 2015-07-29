@@ -2,6 +2,7 @@ package hello;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 
 /**
  * Created by Yashawant and Tanmayee on 28/7/15.
@@ -13,6 +14,7 @@ public class HelloService {
 
     @GET
     @Path("hello")
+    @Produces("text/json")
     public String getHello() {
         return "Hello EE";
     }

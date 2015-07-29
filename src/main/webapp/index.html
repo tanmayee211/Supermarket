@@ -1,0 +1,28 @@
+<html ng-app="myApp">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+</head>
+<body>
+<div ng-controller="Hello">
+  <label>Name:</label>
+  <hr>
+  <h1>Hello {{greeting}}!</h1>
+</div>
+
+<script>
+  var app = angular.module('myApp', []);
+  app.controller('Hello', function($scope,$http) {
+
+    $http.get('http://localhost:8080/helloWorld/rest/hello').
+            success(function(data) {
+
+              $scope.greeting = data;
+
+
+            });
+
+
+  });
+</script>
+</body>
+</html>
