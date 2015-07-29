@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hello.HelloServiceSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-28T10:16:07" hostname="user-ThinkPad-T420" time="0.002">
+<testsuite name="hello.HelloServiceSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-29T08:15:09" hostname="user-ThinkPad-T420" time="0.004">
   <properties/>
-  <testcase name="it_shouldReturnHello" classname="hello.HelloServiceSpec" time="0.002"/>
+  <testcase name="it_shouldReturnHello" classname="hello.HelloServiceSpec" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
