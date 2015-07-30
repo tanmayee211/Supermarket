@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hello.HelloServiceSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-29T08:15:09" hostname="user-ThinkPad-T420" time="0.004">
+<testsuite name="hello.HelloServiceSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-07-30T08:47:39" hostname="user-ThinkPad-T420" time="0.249">
   <properties/>
-  <testcase name="it_shouldReturnHello" classname="hello.HelloServiceSpec" time="0.004"/>
+  <testcase name="it_shouldReturnHello" classname="hello.HelloServiceSpec" time="0.249"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[Jul 30, 2015 2:17:39 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Jul 30, 2015 2:17:39 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, all=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+Jul 30, 2015 2:17:39 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:1, serverValue:54}] to localhost:27017
+Jul 30, 2015 2:17:39 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 0, 5]}, minWireVersion=0, maxWireVersion=3, electionId=null, maxDocumentSize=16777216, roundTripTimeNanos=729086}
+Jul 30, 2015 2:17:39 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:2, serverValue:55}] to localhost:27017
+]]></system-err>
 </testsuite>

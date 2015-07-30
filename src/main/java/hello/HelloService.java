@@ -3,6 +3,7 @@ package hello;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 
 /**
  * Created by Yashawant and Tanmayee on 28/7/15.
@@ -15,16 +16,14 @@ public class HelloService {
     @GET
     @Path("hello")
     @Produces("text/json")
-    public String getHello() {
-        return "Hello EE";
+    public String getHello(@QueryParam("cartName") String cartName) {
+        StringBuilder result= new StringBuilder(cartName);
+        result.append(" ");
+        boolean isCartExist= mongoDBService.isCartExist("shoppingCart","cart",cartName);
+        if(isCartExist)
+            result.append("Available");
+        else
+        result.append("Not Available");
+        return result.toString();
     }
-
-
-    @GET
-    @Path("testdb")
-    public String testDB(){
-        mongoDBService.testDb("shoppingCart","cart");
-        return "Done";
-    }
-
 }

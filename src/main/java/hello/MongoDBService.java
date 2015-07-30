@@ -1,9 +1,6 @@
 package hello;
 
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.MongoClient;
+import com.mongodb.*;
 
 public class MongoDBService {
 
@@ -14,18 +11,15 @@ public class MongoDBService {
 
     }
 
-    public void testDb(String dbName,String collectionName) {
+    public boolean isCartExist(String dbName,String collectionName,String cartName) {
+        boolean isCartExist=false;
         DBCollection coll = mongoClient.getDB(dbName).getCollection(collectionName);
-        DBCursor cursor = coll.find();
-        printCart(cursor);
+        DBObject query = new BasicDBObject("name",cartName);
+        DBCursor cartCursor = coll.find(query);
+        if ( cartCursor.count()!=0) {
+            isCartExist=true;
+        }
+        return isCartExist;
     }
 
-    public void printCart(DBCursor cursor) {
-        int i = 1;
-        while (cursor.hasNext()) {
-            System.out.println("Inserted Document: " + i);
-            System.out.println(cursor.next());
-            i++;
-        }
-    }
 }

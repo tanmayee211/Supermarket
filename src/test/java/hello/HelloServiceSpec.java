@@ -10,7 +10,7 @@ public class HelloServiceSpec {
     @Test
     public void it_shouldReturnHello(){
         HelloService helloService = new HelloService();
-        String actual = helloService.getHello();
-        Assert.assertEquals("Hello EE", actual);
+        String actual = helloService.getHello("cartName1");
+        Assert.assertEquals("cartName1 Not Available", actual);
     }
 }
