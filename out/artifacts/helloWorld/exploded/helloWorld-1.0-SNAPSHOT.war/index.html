@@ -1,9 +1,9 @@
-<html ng-app="myApp">
+<html ng-app="Supermarket">
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 </head>
 <body>
-<div ng-controller="Hello">
+<div ng-controller="ProductController">
   <input type="text" ng-model="cartName" />
   <button type="button"  ng-click="validateCart()" >validate</button>
   <hr>
@@ -11,8 +11,8 @@
 </div>
 
 <script>
-  var app = angular.module('myApp', []);
-  app.controller('Hello', function($scope,$http) {
+  var app = angular.module('Supermarket', []);
+  app.controller('ProductController', function($scope,$http) {
     $scope.validateCart= function ()
     {
       $http({
