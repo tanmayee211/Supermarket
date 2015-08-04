@@ -1,5 +1,7 @@
 package controller;
 
+import Service.MongoDBService;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -9,7 +11,7 @@ import java.util.List;
 @Path("/")
 public class ProductController {
 
-    private  MongoDBService mongoDBService = null;
+    private MongoDBService mongoDBService = null;
 
     public void setMongoDBService(MongoDBService mongoDBService) {
         this.mongoDBService = mongoDBService;
