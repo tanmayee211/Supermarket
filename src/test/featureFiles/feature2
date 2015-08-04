@@ -1,6 +1,0 @@
-Feature: something
-
-  Scenario: See if the correct page opens upon hitting the URL
-    Given: I write the correct URL
-    When: I hit "Enter"
-    Then : it should open index page
