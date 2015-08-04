@@ -1,14 +1,15 @@
-package hello;
+package controller;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+import java.util.ArrayList;
+import java.util.List;
 
 @Path("/")
 public class ProductController {
 
-    private  MongoDBService mongoDBService =null;
+    private  MongoDBService mongoDBService = null;
 
     public void setMongoDBService(MongoDBService mongoDBService) {
         this.mongoDBService = mongoDBService;
@@ -20,12 +21,8 @@ public class ProductController {
     @GET
     @Path("products")
     @Produces("text/json")
-    public String getProductList() {
-
-
-        return null;
-
+    public List getProductList() {
+        List productList = new ArrayList<>();
+        return productList;
     }
-
-
 }

@@ -1,3 +1,5 @@
+package junit.controller;
+
 import hello.ProductController;
 import org.junit.Assert;
 import org.junit.Test;
