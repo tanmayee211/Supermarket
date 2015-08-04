@@ -6,14 +6,16 @@ import org.junit.Test;
 
 import java.util.List;
 
+import static org.hamcrest.core.Is.is;
+
 /**
  * Created by Yashawant and Tanmayee on 28/7/15.
  */
 public class ProductControllerSpec {
     @Test
-    public void it_shouldReturnHello(){
+    public void it_shouldReturnProductList(){
         ProductController productController = new ProductController();
-        List actual = productController.getProductList();
-       // Assert.assertEquals("cartName1 Not Available", actual);
+        List productList = productController.getProductList();
+        Assert.assertThat(productList.isEmpty(), is(false));
     }
 }
