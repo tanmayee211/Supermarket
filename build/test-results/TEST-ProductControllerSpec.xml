@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ProductControllerSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-04T05:34:55" hostname="Tejaswita-T440" time="0.008">
-  <properties/>
-  <testcase name="it_shouldReturnHello" classname="ProductControllerSpec" time="0.008"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
