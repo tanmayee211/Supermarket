@@ -1,6 +1,5 @@
 package cucumber.stepdef;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,6 +30,6 @@ public class ProductDisplayStepDef {
 
     @Then("^I should see a list of products$")
     public void I_should_see_a_list_of_products() throws Throwable {
-        //assertThat(webDriver.findElement(By.id("productList")).getSize(),is(not(0)));
+       assertThat(webDriver.findElements(By.id("productList")).size(), is(not(0)));
     }
 }
