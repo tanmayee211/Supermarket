@@ -2,61 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be77b963-cc05-4146-90c4-f2eee811c9f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Runner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/intialSetupFeature.feature" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\artifacts\Gradle___helloWorld_helloWorld___helloWorld_1_0_SNAPSHOT_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\artifacts\Gradle___helloWorld_helloWorld___helloWorld_1_0_SNAPSHOT_war__exploded_.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__asm_asm_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__com_sun_jersey_jersey_core_1_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__com_sun_jersey_jersey_server_1_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__com_sun_jersey_jersey_servlet_1_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_mongodb_mongo_java_driver_3_0_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\classes\main\hello\HelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\classes\main\hello\MongoDBService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\classes\test\hello\HelloServiceSpec.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\libs\helloWorld-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\classes\hello.HelloServiceSpec.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\css\base-style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\css\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\js\report.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\packages\hello.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\TEST-hello.HelloServiceSpec.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\binary\test\output.bin" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\binary\test\output.bin.idx" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\binary\test\results.bin" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_4588443650350363153_tmp" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_5889535806056302841_tmp" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_8744387735442550593_tmp" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\war\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\META-INF\MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\classes\hello\HelloService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\classes\hello\MongoDBService.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\asm-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\jersey-core-1.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\jersey-server-1.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\jersey-servlet-1.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\jsr311-api-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\lib\mongo-java-driver-3.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\helloWorld-1.0-SNAPSHOT.war" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\src\test\featureFiles\feature2" afterPath="" />
-      <change type="DELETED" beforePath="D:\tutorials\Supermarket\src\test\featureFiles\intialSetupFeature.feature" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\outputFileStates.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.gradle\2.5\taskArtifacts\taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__com_google_code_gson_gson_2_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__com_google_guava_guava_18_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__commons_codec_commons_codec_1_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__commons_io_commons_io_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_core_1_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_html_0_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_java8_1_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_java_1_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_junit_1_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_cucumber_jvm_deps_1_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__info_cukes_gherkin_2_12_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__io_netty_netty_3_5_2_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_java_dev_jna_jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_java_dev_jna_jna_platform_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_sourceforge_cssparser_cssparser_0_9_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_sourceforge_htmlunit_htmlunit_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_apache_commons_commons_lang3_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_apache_httpcomponents_httpclient_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_apache_httpcomponents_httpmime_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_eclipse_jetty_jetty_io_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_eclipse_jetty_jetty_util_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_eclipse_jetty_websocket_websocket_api_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_eclipse_jetty_websocket_websocket_client_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_eclipse_jetty_websocket_websocket_common_9_2_11_v20150529.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_api_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_chrome_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_firefox_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_htmlunit_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_ie_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_java_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_leg_rc_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_remote_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_safari_driver_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_seleniumhq_selenium_selenium_support_2_46_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__org_webbitserver_webbit_0_4_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__xalan_serializer_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__xalan_xalan_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\libraries\Gradle__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\classes\test\ProductDisplayStepDef.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\classes\test\RunCukesTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\classes\ProductControllerSpec.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\classes\RunCukesTest.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\classes\Scenario#3a#20As#20a#20user#20I#20should#20be#20able#20to#20see#20a#20list#20of#20products.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\reports\tests\packages\default-package.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\resources\test\productDisplay.feature" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\TEST-ProductControllerSpec.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\TEST-RunCukesTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\test-results\TEST-Scenario#3a#20As#20a#20user#20I#20should#20be#20able#20to#20see#20a#20list#20of#20products.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_2445781404340380831_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_4393081871230250340_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_4574476495200610834_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_5298884458847796645_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_6475337371812701000_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\build\tmp\test\jar_extract_7958700042482389987_tmp" afterPath="" />
+      <change type="DELETED" beforePath="D:\tutorials\Supermarket\out\artifacts\helloWorld\exploded\helloWorld-1.0-SNAPSHOT.war\WEB-INF\classes\hello\ProductController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/hello/ProductController.class" afterPath="$PROJECT_DIR$/build/classes/main/hello/ProductController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/ProductControllerSpec.class" afterPath="$PROJECT_DIR$/build/classes/test/ProductControllerSpec.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ProductDisplayStepDef.java" afterPath="$PROJECT_DIR$/src/test/java/ProductDisplayStepDef.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Supermarket.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,21 +119,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="intialSetupFeature.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/intialSetupFeature.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyStepdefs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MyStepdefs.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,7 +135,60 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloServiceSpec.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/HelloService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#90#91#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductControllerSpec.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ProductControllerSpec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hello/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDisplayStepDef.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ProductDisplayStepDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0465117">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunCukesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RunCukesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -136,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/MongoDBService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -145,18 +219,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.36">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19323671">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state vertical-scroll-proportion="-6.24">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -214,6 +278,11 @@
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="war" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
@@ -284,7 +353,7 @@
       <map>
         <entry key="D:/projects/beacon-manager/rest-api" value="2876660376881" />
         <entry key="D:/projects/priority-moments/module-service-documentation-master" value="2875462753776" />
-        <entry key="$PROJECT_DIR$" value="2877201800311" />
+        <entry key="$PROJECT_DIR$" value="2877329539918" />
         <entry key="$PROJECT_DIR$/../dropwizard-rest-api" value="4312107293334" />
       </map>
     </option>
@@ -298,6 +367,16 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.ws.rs/jsr311-api/1.1.1/59033da2a1afd56af1ac576750a8d0b1830d59e6/jsr311-api-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-server/1.13/a83c83bf51fe532e2226a91110f1a2297711c536/jersey-server-1.13.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-core/1.13/4326a56dc6b2d67b7313905c353e1af225bb164f/jersey-core-1.13.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.jersey/jersey-servlet/1.13/2e45e281002391865525c4bf0e525887dcd22341/jersey-servlet-1.13.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/3.0.3/2861ec441c95b6cff99ad6761c01776cf708817a/mongo-java-driver-3.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/asm/asm/3.1/c157def142714c544bdea2e6144645702adf7097/asm-3.1.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -377,10 +456,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/featureFiles/intialSetupFeature.feature" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/Runner.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/HelloService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ProductDisplayStepDef.java" />
       </list>
     </option>
   </component>
@@ -400,7 +481,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="48" />
-    <option name="y" value="-2" />
+    <option name="y" value="-11" />
     <option name="width" value="1319" />
     <option name="height" value="780" />
   </component>
@@ -506,11 +587,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supermarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Supermarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,8 +652,27 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="135" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="135" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="810" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="139" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="138" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="139" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="813" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hello" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\tutorials\Supermarket\src\test\resources" />
       <recent name="D:\tutorials\Supermarket\src\test" />
@@ -797,16 +919,16 @@
       <workItem from="1438600749382" duration="2305000" />
       <workItem from="1438605465805" duration="1012000" />
       <workItem from="1438663865229" duration="426000" />
-      <workItem from="1438664816093" duration="88000" />
+      <workItem from="1438664816093" duration="1707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3831000" />
+    <option name="totallyTimeSpent" value="5450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-2" width="1319" height="780" extended-state="0" />
-    <editor active="true" />
+    <frame x="48" y="-11" width="1319" height="780" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -814,7 +936,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42681047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -823,15 +946,14 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1030,21 +1152,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloServiceSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/intialSetupFeature.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyStepdefs.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.24">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,34 +1186,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/intialSetupFeature.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/MongoDBService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.36">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/HelloService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19323671">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#90#91#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyStepdefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ProductControllerSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RunCukesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hello/HelloServiceSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ProductDisplayStepDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0465117">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>

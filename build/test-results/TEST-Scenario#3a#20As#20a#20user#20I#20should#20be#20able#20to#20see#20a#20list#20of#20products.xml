@@ -1,78 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Scenario: As a user I should be able to see a list of products" tests="4" skipped="0" failures="2" errors="0" timestamp="2015-08-03T12:43:41" hostname="user-ThinkPad-T420" time="0.049">
+<testsuite name="Scenario: As a user I should be able to see a list of products" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-08-04T05:35:16" hostname="Tejaswita-T440" time="15.621">
   <properties/>
-  <testcase name="Given I open the application" classname="Scenario: As a user I should be able to see a list of products" time="0.001"/>
+  <testcase name="Given I open the application" classname="Scenario: As a user I should be able to see a list of products" time="0.0"/>
   <testcase name="When The page loads" classname="Scenario: As a user I should be able to see a list of products" time="0.0"/>
-  <testcase name="Then I should see a list of products" classname="Scenario: As a user I should be able to see a list of products" time="0.002">
-    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}&#10;Command duration or timeout: 17 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: b623f4cb-d956-415b-8890-95115aabcf95&#10;*** Element info: {Using=id, value=productList}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b623f4cb-d956-415b-8890-95115aabcf95
-*** Element info: {Using=id, value=productList}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at ProductDisplayStepDef.I_should_see_a_list_of_products(ProductDisplayStepDef.java:32)
-	at ✽.Then I should see a list of products(productDisplay.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
-</failure>
-  </testcase>
-  <testcase name="classMethod" classname="Scenario: As a user I should be able to see a list of products" time="5.728">
-    <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}&#10;Command duration or timeout: 17 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'&#10;System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: b623f4cb-d956-415b-8890-95115aabcf95&#10;*** Element info: {Using=id, value=productList}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}
-Command duration or timeout: 17 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=31.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b623f4cb-d956-415b-8890-95115aabcf95
-*** Element info: {Using=id, value=productList}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
-	at org.openqa.selenium.By$ById.findElement(By.java:215)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at ProductDisplayStepDef.I_should_see_a_list_of_products(ProductDisplayStepDef.java:32)
-	at ✽.Then I should see a list of products(productDisplay.feature:8)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;productList&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
-System info: host: 'user-ThinkPad-T420', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-32-generic', java.version: '1.8.0_45'
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous6916056169941592110webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
-</failure>
-  </testcase>
+  <testcase name="Then I should see a list of products" classname="Scenario: As a user I should be able to see a list of products" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: As a user I should be able to see a list of products" time="20.373"/>
+  <testcase name="Given I open the application" classname="Scenario: As a user I should be able to see a list of products" time="0.0"/>
+  <testcase name="When The page loads" classname="Scenario: As a user I should be able to see a list of products" time="0.001"/>
+  <testcase name="Then I should see a list of products" classname="Scenario: As a user I should be able to see a list of products" time="0.001"/>
+  <testcase name="classMethod" classname="Scenario: As a user I should be able to see a list of products" time="15.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

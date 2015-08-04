@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
  * Created by Tejaswita on 03-08-2015.
  */
 public class MyStepdefs {
-    @When("^I hit \"([^\"]*)\"$")
+    @When("^I hit \"([^\"]*)\" $")
     public void I_hit(String arg1) throws Throwable {
         // Express the Regexp above with the code you wish you had
         throw new PendingException();
