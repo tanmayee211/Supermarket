@@ -2,6 +2,8 @@ package Service;
 
 import com.mongodb.*;
 
+import java.util.List;
+
 public class MongoDBService {
 
    final private  MongoClient mongoClient;
@@ -22,4 +24,8 @@ public class MongoDBService {
         return isCartExist;
     }
 
+    public List getProductList() {
+        System.out.println("1");
+        return null;
+    }
 }

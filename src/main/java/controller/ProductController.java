@@ -24,7 +24,6 @@ public class ProductController {
     @Path("products")
     @Produces("text/json")
     public List getProductList() {
-        List productList = new ArrayList<>();
-        return productList;
+        return mongoDBService.getProductList();
     }
 }
