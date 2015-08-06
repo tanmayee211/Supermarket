@@ -16,7 +16,7 @@
     $scope.validateCart= function ()
     {
       $http({
-        url: 'rest/hello',
+        url: 'rest/product',
         method: "GET",
         params: {cartName: $scope.cartName}
       }).success(function(data) {
