@@ -2,18 +2,16 @@ package resource;
 
 import dao.ProductDao;
 import dto.Product;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import org.bson.types.ObjectId;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.Arrays;
 import java.util.List;
 
 @Path("/")
 public class ProductResource {
-
-
-
     private ProductDao productDao;
 
     public ProductResource(ProductDao productDao) {
@@ -23,9 +21,18 @@ public class ProductResource {
     public ProductResource(){}
 
     @GET
-    @Path("product")
+    @Path("products")
     @Produces(MediaType.APPLICATION_JSON)
     public List getProducts() {
        return productDao.getAll();
     }
+
+    @POST
+    @Path("product")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response postProduct(Product product) {
+      return Response.status(Response.Status.CREATED).entity(productDao.addProduct(product)).build();
+    }
+
+
 }

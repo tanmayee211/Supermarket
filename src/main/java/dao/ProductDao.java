@@ -1,15 +1,11 @@
 package dao;
 
 import com.mongodb.*;
-import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
 import dto.Product;
-import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 
-import java.util.Collections;
 import java.util.List;
 
 public class ProductDao {
@@ -24,5 +20,10 @@ public class ProductDao {
 
     public List getAll() {
         return datastore.createQuery(Product.class).asList();
+    }
+
+    public ObjectId addProduct(Product product) {
+        datastore.save(product);
+        return product.getProductId();
     }
 }

@@ -1,14 +1,15 @@
 package dto;
 
+import org.bson.types.ObjectId;
+import org.codehaus.jackson.annotate.JsonIgnore;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
-import java.util.UUID;
-
-@Entity
+@Entity("product")
 public class Product {
+
     @Id
-    private String id = UUID.randomUUID().toString();
+    private ObjectId productId;
     private String name;
     private double price;
 
@@ -28,12 +29,12 @@ public class Product {
         return price;
     }
 
-    public String getId() {
-        return id;
+    public ObjectId getProductId() {
+        return productId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setProductId(ObjectId id) {
+        this.productId = id;
     }
 
     public void setName(String name) {
