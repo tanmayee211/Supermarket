@@ -1,7 +1,7 @@
 package dao;
 
 import com.mongodb.*;
-import dto.Product;
+import domain.Product;
 import org.bson.types.ObjectId;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
@@ -12,10 +12,8 @@ public class ProductDao {
 
     private final Datastore datastore;
 
-    public ProductDao(MongoClient mongoClient , String databasename) {
-        Morphia morphia = new Morphia();
-        morphia.map(Product.class);
-        datastore = morphia.createDatastore(mongoClient,databasename);
+    public ProductDao(MorphiaConfig morphiaConfig) {
+        datastore = morphiaConfig.getDatastore();
     }
 
     public List getAll() {

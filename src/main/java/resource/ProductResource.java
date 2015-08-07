@@ -1,13 +1,11 @@
 package resource;
 
 import dao.ProductDao;
-import dto.Product;
-import org.bson.types.ObjectId;
+import domain.Product;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Arrays;
 import java.util.List;
 
 @Path("/")
@@ -31,7 +29,8 @@ public class ProductResource {
     @Path("product")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response postProduct(Product product) {
-      return Response.status(Response.Status.CREATED).entity(productDao.addProduct(product)).build();
+
+      return   Response.status(Response.Status.CREATED).entity(productDao.addProduct(product)).build();
     }
 
 
