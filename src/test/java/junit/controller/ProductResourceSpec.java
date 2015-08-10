@@ -25,7 +25,7 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class ProductResourceSpec {
     @Test
-    public void itShouldPostAProduct(){
+    public void itShouldAddAProduct(){
         ProductDao productDao = Mockito.mock(ProductDao.class);
         ProductResource productResource = new ProductResource(productDao);
         Product laptop = createProduct("Lenovo Thinkpad T420", 40000.00);

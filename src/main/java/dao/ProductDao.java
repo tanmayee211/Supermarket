@@ -1,5 +1,6 @@
 package dao;
 
+import com.google.inject.Inject;
 import com.mongodb.*;
 import domain.Product;
 import org.bson.types.ObjectId;
@@ -12,6 +13,7 @@ public class ProductDao {
 
     private final Datastore datastore;
 
+    @Inject
     public ProductDao(MorphiaConfig morphiaConfig) {
         datastore = morphiaConfig.getDatastore();
     }
