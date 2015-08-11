@@ -13,6 +13,7 @@ import javax.ws.rs.core.Response;
 import java.util.Arrays;
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -35,7 +36,7 @@ public class ProductResourceSpec {
 
         verify(productDao).addProduct(laptop);
         assertThat(response.getStatus(), is(Response.Status.CREATED.getStatusCode()));
-        assertThat(response.getEntity(),notNullValue());
+        assertThat(response.getEntity(),equalTo("Successfully added!"));
 
     }
 
@@ -48,9 +49,11 @@ public class ProductResourceSpec {
         Product coffee = createProduct("bru", 11.0);
         when(productDao.getAll()).thenReturn(Arrays.asList(doveSoap, tea, coffee));
 
-        List products = productResource.getProducts();
+        Response response=productResource.getProducts();
+        List products = (List) response.getEntity();
 
         verify(productDao).getAll();
+        assertThat(response.getStatus(), is(Response.Status.OK.getStatusCode()));
         assertThat(products.contains(doveSoap), is(true));
         assertThat(products.contains(tea), is(true));
         assertThat(products.contains(coffee), is(true));

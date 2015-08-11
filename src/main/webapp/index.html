@@ -1,36 +1,48 @@
 <html ng-app="Supermarket">
 <head>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/jquery/jquery.min.js"></script>
 
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
-
 </head>
 <body>
-<div ng-controller="ProductController  as prdCtrl">
-
-
-<div class="container">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            Supermarket
-            <button type="button" ng-click="prdCtrl.displayItem()" ><i class="glyphicon glyphicon-list">
-
-            </i></button>
-
-        </div>
-
-        <div class="panel-body">
-            <div ng-repeat="product in prdCtrl.products">
-                {{product.name}} : {{product.price }} Rs.
-
+<div ng-controller="ProductController as controller">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="text-left panel-heading">
+                <div class="row">
+                    <div class="pull-left" style="margin-left: 30px">
+                        Supermarket
+                    </div>
+                    <div class="pull-right" style="font-size:20px ">
+                        <button class="btn btn-primary" id="addProduct" style="margin-top: 35px;
+                        background: transparent;border: none;color: black" ng-click="controller.addProductView=true">
+                            Add product
+                        </button>
+                    </div>
+                </div>
             </div>
+            <div class="panel-body">
+                <span ng-if="controller.addProductView" class="container center-block">
+
+                    Product Name: <input type="text" ng-model="controller.name" id="productName"
+                                         ng-focus="controller.showSuccessMessage=false"/>
+                    Product Price: <input type="text" ng-model="controller.price" id="productPrice"
+                                          ng-focus="controller.showSuccessMessage=false"/>
+                    <button id="submit" ng-click="controller.addProduct()">submit</button>
+
+                    <span id="message" ng-if="controller.showSuccessMessage" class="alert-success">
+                        {{controller.successMessage}}
+                    </span>
+                </span>
+            </div>
+            <div class="text-left panel-footer"> copyright @ EE.Inc</div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

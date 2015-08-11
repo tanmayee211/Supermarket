@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import dao.ProductDao;
 import domain.Product;
+import org.bson.types.ObjectId;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -13,6 +14,9 @@ import java.util.List;
 @Path("/")
 @Singleton
 public class ProductResource {
+
+    private String ADD_PRODUCT_SUCCESS_MESSAGE="Successfully added!";
+    private String ADD_PRODUCT_FAILURE_MESSAGE ="Adding failed!";
     private ProductDao productDao;
 
     @Inject
@@ -23,17 +27,19 @@ public class ProductResource {
     @GET
     @Path("products")
     @Produces(MediaType.APPLICATION_JSON)
-    public List getProducts() {
-       return productDao.getAll();
+    public Response getProducts() {
+        return Response.status(Response.Status.OK).entity(productDao.getAll()).build();
     }
 
     @POST
     @Path("product")
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public Response postProduct(Product product) {
-      return   Response.status(Response.Status.CREATED).entity(productDao.addProduct(product)).build();
+        ObjectId objectId = productDao.addProduct(product);
+        if(objectId!=null) {
+            return Response.status(Response.Status.CREATED).entity(ADD_PRODUCT_SUCCESS_MESSAGE).build();
+        }
+        return Response.status(Response.Status.CREATED).entity(ADD_PRODUCT_FAILURE_MESSAGE).build();
     }
-
-
 }
