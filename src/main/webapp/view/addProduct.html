@@ -1,0 +1,13 @@
+
+                <span  class="container center-block">
+
+                    Product Name: <input type="text" ng-model="controller.name" id="productName"
+                                         ng-focus="controller.showSuccessMessage=false"/>
+                    Product Price: <input type="text" ng-model="controller.price" id="productPrice"
+                                          ng-focus="controller.showSuccessMessage=false"/>
+                    <button id="submit" ng-click="controller.addProduct()">submit</button>
+
+                    <span id="message" ng-if="controller.showSuccessMessage" class="alert-success">
+                        {{controller.successMessage}}
+                    </span>
+                </span>
