@@ -11,10 +11,10 @@ import domain.Product;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.junit.After;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.Before;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
@@ -31,11 +31,12 @@ public class ProductDaoSpec {
     private MongoClient mongoClientForTest;
     private Properties properties;
     private String databaseName;
+    public static final String H2_BACKEND_FILE = "supermarket.mv";
 
     @Before
     public void setUp() {
 
-        server = new MongoServer(new H2Backend("supermarket.mv"));
+        server = new MongoServer(new H2Backend(H2_BACKEND_FILE));
         properties  = new Properties();
         String propFileName = "appConfig.properties";
         InputStream propertiesStream = getClass().getClassLoader().getResourceAsStream(propFileName);
@@ -56,6 +57,8 @@ public class ProductDaoSpec {
     public void tearDown() {
         mongoClientForTest.close();
         server.shutdown();
+        File h2Backendfile = new File(H2_BACKEND_FILE);
+        h2Backendfile.delete();
     }
 
 
