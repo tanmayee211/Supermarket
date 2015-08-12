@@ -34,6 +34,7 @@ public class ProductDaoSpec {
 
     @Before
     public void setUp() {
+
         server = new MongoServer(new H2Backend("supermarket.mv"));
         properties  = new Properties();
         String propFileName = "appConfig.properties";
