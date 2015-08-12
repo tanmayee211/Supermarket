@@ -1,7 +1,19 @@
-var app = angular.module('Supermarket', []);
+var app = angular.module('Supermarket', ['ngRoute']);
+
+app.config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+            when('/add', {
+                templateUrl: 'view/addProduct.html',
+                controller: 'ProductController as controller'
+            }).
+            otherwise({
+                redirectTo: '/'
+            });
+    }]);
+
 app.controller('ProductController', function($http) {
     var controller=this;
-    controller.addProductView=false;
     controller.products=[];
     controller.successMessage={};
     controller.showSuccessMessage=false;
