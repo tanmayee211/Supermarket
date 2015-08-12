@@ -1,0 +1,16 @@
+<div id="productList" class="container" style="font-size: 20px">
+    <span class="row">
+            <div style="margin-bottom:30px ">
+                <div class="col-lg-4" style="font-size: 25px">Product Name </div>
+                <div class="col-lg-4" style="font-size: 25px">Unit Price(Rs)</div>
+            </div>
+    </span>
+    <div  ng-repeat="product in controller.products">
+        <span class="row">
+            <div class="product-element">
+              <div class="col-lg-4" style="margin-top: 10px;">{{product.name}}  </div>
+            <div class="col-lg-4" style="margin-top: 10px;">{{product.price}}  </div>
+            </div>
+        </span>
+    </div>
+</div>

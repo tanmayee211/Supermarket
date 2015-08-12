@@ -11,9 +11,28 @@
     height: 80%;
 }
 
-.panel-footer {
-    bottom: 0%;
-    position:absolute;
-    width: auto;
-    border: none;
+
+.product-element {
+    border: 1px;
+    border-color: darkgrey;
+    border-style: solid;
+    margin-top: 20px;
+    background: #888888;
 }
+
+.panel-footer {
+    bottom: 0;
+    height: 40px;
+    position:relative;
+    width: 100%;
+    border: none;
+    background-color: #5CDE5C;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+}
+

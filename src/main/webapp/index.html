@@ -8,16 +8,23 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/addController.js"></script>
+    <script src="js/homeController.js"></script>
+
 </head>
 <body>
-<div class="container">
-    <div class="panel panel-default">
+<div id="wrap">
+    <div class="panel panel-default" style="border: none">
         <div class="text-left panel-heading">
             <div class="row">
                 <div class="pull-left" style="margin-left: 30px">
                     Supermarket
                 </div>
                 <div class="pull-right" style="font-size:20px ">
+                    <a class="btn btn-primary" id="home" style="margin-top: 35px;
+                        background: transparent;border: none;color: black" href="#/">
+                        Home
+                    </a>
                     <a class="btn btn-primary" id="addProduct" style="margin-top: 35px;
                         background: transparent;border: none;color: black" href="#/add">
                         Add product
@@ -26,9 +33,10 @@
             </div>
         </div>
         <div class="panel-body">
-            <div ng-view></div>
+            <div class="container">
+                <div ng-view></div>
+            </div>
         </div>
-        <div class="text-left panel-footer"> copyright @ EE.Inc</div>
     </div>
 </div>
 </body>
