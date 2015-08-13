@@ -17,18 +17,22 @@
     <div class="panel panel-default" style="border: none">
         <div class="text-left panel-heading">
             <div class="row">
-                <div class="pull-left" style="margin-left: 30px">
+                <div class="pull-left col-lg-8" style="margin-left: 30px;margin-bottom: -40px">
                     Supermarket
                 </div>
-                <div class="pull-right" style="font-size:20px ">
-                    <a class="btn btn-primary" id="home" style="margin-top: 35px;
-                        background: transparent;border: none;color: black" href="#/">
-                        Home
-                    </a>
-                    <a class="btn btn-primary" id="addProduct" style="margin-top: 35px;
-                        background: transparent;border: none;color: black" href="#/add">
-                        Add product
-                    </a>
+
+                <div class=" pull-right col-lg-4 ">
+
+                     <nav class="navbar" style="margin-bottom:0px">
+                                 <ul class="nav navbar-nav">
+                                     <li class="active"><a class="btn" id="home" style="color:black ;font-size: 20px" href="#/">Home</a></li>
+                                     <li><a class="btn" id="addProduct" style="color:black;font-size: 20px" href="#/add">Add</a></li>
+                                     <li><a class="btn" id="cart-button" style="color:black;font-size: 20px" href="#/viewCart">
+                                         <i class="glyphicon glyphicon-shopping-cart" style="color:black; font-size: 15px"></i> Cart
+                                         <span class="badge"> 0</span>
+                                     </a></li>
+                                 </ul>
+                     </nav>
                 </div>
             </div>
         </div>

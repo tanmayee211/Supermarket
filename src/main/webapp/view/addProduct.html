@@ -5,7 +5,7 @@
                                          ng-focus="controller.showSuccessMessage=false"/>
                     Product Price: <input type="text" ng-model="controller.price" id="productPrice"
                                           ng-focus="controller.showSuccessMessage=false"/>
-                    <button id="submit" ng-click="controller.addProduct()">submit</button>
+                    <button id="submit" class="btn product-button" ng-click="controller.addProduct()">submit</button>
 
                     <span id="message" ng-if="controller.showSuccessMessage" class="alert-success">
                         {{controller.successMessage}}

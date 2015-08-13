@@ -1,16 +1,28 @@
-<div id="productList" class="container" style="font-size: 20px">
+<div id="productList" align="center" style="font-size: 15px">
     <span class="row">
-            <div style="margin-bottom:30px ">
-                <div class="col-lg-4" style="font-size: 25px">Product Name </div>
-                <div class="col-lg-4" style="font-size: 25px">Unit Price(Rs)</div>
+        <span ng-repeat="product in controller.products">
+
+            <div class="product-element well">
+
+                <div class="product-header" style="text-align:center">
+                    <div class="label label-default"
+                         style="font-size: 20px; background: transparent; color: #2b542c" ng-bind="product.name"></div>
+
+                    </br> <div class="text-muted"
+                                        style="font-size: 17px; background: transparent; color: #2b542c"
+                                        ng-bind="product.price+' Rs'"></div>
+
+                </div>
+
+                <div class="product-body" style="text-align:center"></div>
+
+                <div class="product-footer" style="text-align:center">
+                    <input type="number" min="1" max="20"/>
+                    <a class="btn btn-sm product-button">
+                        <span class="glyphicon glyphicon-shopping-cart" style="color:black;font-size:15px"></span>
+                    </a>
+                </div>
             </div>
-    </span>
-    <div  ng-repeat="product in controller.products">
-        <span class="row">
-            <div class="product-element">
-              <div class="col-lg-4" style="margin-top: 10px;">{{product.name}}  </div>
-            <div class="col-lg-4" style="margin-top: 10px;">{{product.price}}  </div>
-            </div>
+            </span>
         </span>
-    </div>
 </div>
