@@ -11,9 +11,17 @@ app.config(['$routeProvider',
                 templateUrl: 'view/home.html',
                 controller: 'HomeController as controller'
             }).
+            /*when('/', {
+                templateUrl: 'view/viewCart.html',
+                controller: 'ViewCartController as controller'
+            }).*/
             otherwise({
                 redirectTo: '/'
             });
     }]);
+
+
+
+
 
 
