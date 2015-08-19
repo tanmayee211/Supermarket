@@ -9,7 +9,6 @@ import org.bson.types.ObjectId;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 @Path("/")
 @Singleton
@@ -28,6 +27,7 @@ public class ProductResource {
     @Path("products")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getProducts() {
+
         return Response.status(Response.Status.OK).entity(productDao.getAll()).build();
     }
 

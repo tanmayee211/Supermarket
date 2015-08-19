@@ -30,6 +30,7 @@ public class Product {
         return price;
     }
 
+    @JsonIgnore
     public ObjectId getProductId() {
         return productId;
     }

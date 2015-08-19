@@ -1,4 +1,5 @@
-package dao;
+package junit.dao;
+import dao.MorphiaConfig;
 import org.junit.Test;
 import org.mongodb.morphia.Datastore;
 

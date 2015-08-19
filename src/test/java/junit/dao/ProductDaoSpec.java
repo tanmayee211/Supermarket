@@ -1,10 +1,13 @@
-package dao;
+package junit.dao;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
+import common.MongoUtility;
+import dao.MorphiaConfig;
+import dao.ProductDao;
 import de.bwaldvogel.mongo.MongoServer;
 import de.bwaldvogel.mongo.backend.h2.H2Backend;
 import domain.Product;
@@ -27,36 +30,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ProductDaoSpec {
     public static final String PRODUCT = "product";
-    private MongoServer server;
     private MongoClient mongoClientForTest;
-    private Properties properties;
-    private String databaseName;
     public static final String H2_BACKEND_FILE = "supermarket.mv";
 
     @Before
     public void setUp() {
-
-        server = new MongoServer(new H2Backend(H2_BACKEND_FILE));
-        properties  = new Properties();
-        String propFileName = "appConfig.properties";
-        InputStream propertiesStream = getClass().getClassLoader().getResourceAsStream(propFileName);
-        try {
-            properties.load(propertiesStream);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        String host = properties.getProperty("mongo.host");
-        Integer port = Integer.parseInt(properties.getProperty("mongo.port"));
-        databaseName=properties.getProperty("mongo.databaseName");
-        server.bind(host,port);
-        mongoClientForTest = new MongoClient(host, port);
+        MongoUtility.startServer();
+        mongoClientForTest = MongoUtility.getClient();
     }
 
     @After
     public void tearDown() {
         mongoClientForTest.close();
-        server.shutdown();
+        MongoUtility.stopServer();
         File h2Backendfile = new File(H2_BACKEND_FILE);
         h2Backendfile.delete();
     }
@@ -70,7 +56,7 @@ public class ProductDaoSpec {
 
         ObjectId laptopId = productDao.addProduct(laptop);
 
-        MongoDatabase database = mongoClientForTest.getDatabase(databaseName);
+        MongoDatabase database = mongoClientForTest.getDatabase(MongoUtility.getDbName());
         MongoCollection<Document> products = database.getCollection(PRODUCT);
         BasicDBObject findQuery = new BasicDBObject();
         String productId = "_id";
@@ -88,7 +74,7 @@ public class ProductDaoSpec {
     @Test
     public void itShouldGetAllProducts() {
 
-        MongoDatabase database = mongoClientForTest.getDatabase(databaseName);
+        MongoDatabase database = mongoClientForTest.getDatabase(MongoUtility.getDbName());
         MongoCollection<Document> collection = database.getCollection(PRODUCT);
         Document doveSoapJson = getJSONDocument("{'name':'dove soap', 'price':22.2}");
         Document teaJson = getJSONDocument("{'name':'tea', 'price':12.3}");

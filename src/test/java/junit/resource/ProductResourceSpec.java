@@ -1,4 +1,4 @@
-package junit.controller;
+package junit.resource;
 
 import dao.ProductDao;
 import domain.Product;
@@ -20,9 +20,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-/**
- * Created by Yashawant and Tanmayee on 28/7/15.
- */
 @RunWith(MockitoJUnitRunner.class)
 public class ProductResourceSpec {
     @Test
