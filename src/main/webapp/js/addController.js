@@ -20,4 +20,5 @@ angular.module('Supermarket')
                 controller.price = "";
             });
         }
+
     });

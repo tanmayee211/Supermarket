@@ -11,10 +11,10 @@ app.config(['$routeProvider',
                 templateUrl: 'view/home.html',
                 controller: 'HomeController as controller'
             }).
-            /*when('/', {
-                templateUrl: 'view/viewCart.html',
-                controller: 'ViewCartController as controller'
-            }).*/
+            when('/viewCart', {
+                templateUrl: 'view/cart.html',
+                controller: 'CartController as controller'
+            }).
             otherwise({
                 redirectTo: '/'
             });

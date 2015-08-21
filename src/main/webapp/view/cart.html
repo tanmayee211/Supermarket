@@ -1,0 +1,32 @@
+<div id="cartItems" align="center" style="font-size: 15px">
+    <span class="row">
+        <span ng-repeat="cart in controller.cart">
+
+            <div class="product-element well">
+
+                <div class="product-header" style="text-align:center">
+                    <div class="label label-default"
+                         style="font-size: 20px; background: transparent; color: #2b542c" ng-bind="cart.name"></div>
+
+                    </br>
+                    <div class="text-muted"
+                         style="font-size: 17px; background: transparent; color: #2b542c"
+                         ng-bind="cart.price+' Rs'"></div>
+
+                    </br>Quantity
+                    <div class="text-muted"
+                         style="font-size: 17px; background: transparent; color: #2b542c"
+                         ng-bind="cart.quantity"></div>
+
+                    </br>Price
+                    <div class="text-muted"
+                         style="font-size: 17px; background: transparent; color: #2b542c"
+                         ng-bind="cart.totalPrice "></div>
+
+                </div>
+
+                <div class="product-body" style="text-align:center"></div>
+            </div>
+            </span>
+        </span>
+</div>

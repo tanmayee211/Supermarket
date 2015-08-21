@@ -10,6 +10,9 @@
     <script src="js/main.js"></script>
     <script src="js/addController.js"></script>
     <script src="js/homeController.js"></script>
+    <script src="js/cartDataSharingService.js"></script>
+    <script src="js/cartController.js"></script>
+    <script src="js/navController.js"></script>
 
 </head>
 <body>
@@ -21,7 +24,7 @@
                     Supermarket
                 </div>
 
-                <div class=" pull-right col-lg-4 ">
+                <div class=" pull-right col-lg-4 " ng-controller="NavController as controller" >
 
                      <nav class="navbar" style="margin-bottom:0px">
                                  <ul class="nav navbar-nav">
@@ -29,7 +32,7 @@
                                      <li><a class="btn" id="addProduct" style="color:black;font-size: 20px" href="#/add">Add</a></li>
                                      <li><a class="btn" id="cart-button" style="color:black;font-size: 20px" href="#/viewCart">
                                          <i class="glyphicon glyphicon-shopping-cart" style="color:black; font-size: 15px"></i> Cart
-                                         <span class="badge"> 0</span>
+                                         <span class="badge" ng-bind="controller.cart.length"> </span>
                                      </a></li>
                                  </ul>
                      </nav>

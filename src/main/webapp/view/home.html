@@ -17,9 +17,9 @@
                 <div class="product-body" style="text-align:center"></div>
 
                 <div class="product-footer" style="text-align:center">
-                    <input type="number" min="1" max="20"/>
-                    <a class="btn btn-sm product-button">
-                        <span class="glyphicon glyphicon-shopping-cart" style="color:black;font-size:15px"></span>
+                    <input type="number" min="1" max="20" ng-model="product.quantity"/>
+                    <a class="btn btn-sm product-button" ng-click="controller.addToCart(product)">
+                        <span class="glyphicon glyphicon-shopping-cart" style="color:black;font-size:15px" ></span>
                     </a>
                 </div>
             </div>
