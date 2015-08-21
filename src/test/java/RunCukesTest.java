@@ -4,6 +4,6 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = {"@test"},features = "src/test/resources/feature",glue ="cucumber.stepdef",format = "pretty")
+@CucumberOptions(tags = {"@addToCart"},features = "src/test/resources/feature",glue ="cucumber.stepdef",format = "pretty")
 public class RunCukesTest {
 }
