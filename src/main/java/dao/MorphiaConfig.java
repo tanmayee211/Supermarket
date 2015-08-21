@@ -17,15 +17,17 @@ public class MorphiaConfig {
     private final Datastore datastore;
 
     public MorphiaConfig() {
+        this("appConfig.properties");
+    }
 
+    public MorphiaConfig( String configFileName) {
         Properties properties  = new Properties();
-        String propFileName = "appConfig.properties";
-        InputStream propertiesStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+        InputStream propertiesStream = getClass().getClassLoader().getResourceAsStream(configFileName);
         try {
             properties.load(propertiesStream);
         } catch (IOException e) {
             e.printStackTrace();
-       }
+        }
         Morphia morphia = new Morphia();
         String packageName = properties.getProperty("morphia.scanPackage");
         morphia.mapPackage(packageName);

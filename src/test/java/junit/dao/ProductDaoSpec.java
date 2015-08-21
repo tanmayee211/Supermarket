@@ -51,7 +51,7 @@ public class ProductDaoSpec {
     @Test
     public void itShouldAddAProduct() {
 
-        ProductDao productDao = new ProductDao(new MorphiaConfig());
+        ProductDao productDao = new ProductDao(new MorphiaConfig("unitTestConfig.properties"));
         Product laptop = createProduct("Lenovo Thinkpad T420", 40000.00);
 
         ObjectId laptopId = productDao.addProduct(laptop);
@@ -84,7 +84,7 @@ public class ProductDaoSpec {
         Product doveSoap = createProduct("dove soap", 22.2);
         Product tea = createProduct("tea", 12.3);
         Product coffee = createProduct("Coffee", 12.5);
-        ProductDao dao = new ProductDao(new MorphiaConfig());
+        ProductDao dao = new ProductDao(new MorphiaConfig("unitTestConfig.properties"));
 
         List products = dao.getAll();
 

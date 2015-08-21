@@ -3,6 +3,7 @@ package integration;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.ServletModule;
+import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.sun.jersey.api.client.Client;
@@ -31,13 +32,17 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class ProductResourceTest{
     private static final String PRODUCT = "product";
     private final URI uri;
+    private static final String DATABASE = "supermarket";
     private HttpServer httpServer;
     Client restClient;
+    private static final int PORT = 27017;
+    private static final String HOST = "localhost";
 
     public ProductResourceTest() {
          uri = UriBuilder.fromUri("http://localhost/").port(9998).build();
@@ -46,8 +51,6 @@ public class ProductResourceTest{
 
     @Before
     public void startServer() throws IOException {
-
-        MongoUtility.startServer();
 
         ResourceConfig resourceConfig = new PackagesResourceConfig("resource");
         Injector injector = Guice.createInjector(new ServletModule() {
@@ -68,13 +71,13 @@ public class ProductResourceTest{
     @After
     public void stopServer() {
         httpServer.stop();
-        MongoUtility.stopServer();
     }
 
     @Test
     public void itShouldGetAllProducts(){
 
-        MongoDatabase database = MongoUtility.getClient().getDatabase(MongoUtility.getDbName());
+        MongoClient mongoClient = new MongoClient(HOST,PORT);
+        MongoDatabase database = mongoClient.getDatabase(DATABASE);
         MongoCollection<Document> collection = database.getCollection(PRODUCT);
         Document doveSoapJson = getJSONDocument("{'name':'dove soap', 'price':22.2}");
         Document teaJson = getJSONDocument("{'name':'tea', 'price':12.3}");
@@ -89,7 +92,7 @@ public class ProductResourceTest{
         String expected="[{\"price\":22.2,\"name\":\"dove soap\"},{\"price\":12.3,\"name\":\"tea\"},{\"price\":12.5,\"name\":\"Coffee\"}]";
 
         assertThat(response.getStatus(), equalTo(200));
-        assertThat(actual, equalTo(expected));
+        assertThat(actual.contains(expected), is(true));
     }
 
     @Test

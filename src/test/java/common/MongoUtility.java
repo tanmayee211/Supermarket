@@ -25,7 +25,7 @@ public class MongoUtility {
         h2Backendfile.delete();
 
         Properties properties  = new Properties();
-        String propFileName = "appConfig.properties";
+        String propFileName = "unitTestConfig.properties";
         InputStream propertiesStream = MongoUtility.class.getClassLoader().getResourceAsStream(propFileName);
         try {
             properties.load(propertiesStream);

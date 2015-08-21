@@ -3,7 +3,6 @@ package guice.config;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.google.inject.servlet.GuiceServletContextListener;
-import com.sun.jersey.api.core.PackagesResourceConfig;
 import com.sun.jersey.guice.JerseyServletModule;
 import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
 import dao.MorphiaConfig;
@@ -12,9 +11,6 @@ import resource.ProductResource;
 
 import java.util.HashMap;
 
-/**
- * Created by user on 10/8/15.
- */
 public class GuiceConfig extends GuiceServletContextListener {
 
     @Override
